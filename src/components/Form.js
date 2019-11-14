@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
 const FlexForm = styled.form`
@@ -15,6 +15,7 @@ const Slabel = styled.label`
 
 const Form = props => {
   // props.addToTeam to add an object to team list
+  // props.memberToEdit && props.setMemberToEdit
 
   const [teammate, setTeammate] = useState({
     name: "",
@@ -38,6 +39,12 @@ const Form = props => {
       catchphrase: ""
     })
   }
+
+
+
+  useEffect(() => {
+    props.modify(teammate)
+  }, [props.memberToEdit]) // test if this will tick off main component firing, or if I need to link to props
 
   return (
       <FlexForm onSubmit={handleSubmit}>
