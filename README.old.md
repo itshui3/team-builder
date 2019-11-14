@@ -14,9 +14,6 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 In this project you'll build an app that will keep track of memebers of a team. You'll be able to add members to this team as well as edit their details.
 
-=> Ie. create a form that adds members
-=> Create a form that finds an added member and modifies information
-
 ## Project Set Up
 
 - [ ] Create a forked copy of this project.
@@ -38,35 +35,24 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-- [Thisone] Render a list of team members from state
-- [ proone] Build a form to add a new member to the list of members
+- [ ] Render a list of team members from state
+- [ ] Build a form to add a new member to the list of members
 
 ### STEP 1 - Setup your state
 
-- Import the `useState` hook and set up a state property for your team members listject was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Import the `useState` hook and set up a state property for your team members list
 
-## 
-done
+- Give the state variable you just declared a default value. You will need to keep track of a list of team members and each team member will have several key/value pairs associated with them.
 
-- Give the state variable you just declared a default value. You will need to keep track of a list of team members and each team member will have several key/value pairs associated with them## ## A.
-done
-
-- Render your list of team mvailable Scripts
-
-In embers
-done
+- Render your list of team members
 
 ### STEP 2 - Build your form
 
 - In `Form.js` build out your markup
-- Build inputs for `name`, `email` and `role` (backenIn In t(backenhe project directory, you can run:
-
-###- Build inputs for `name`, `email` and `role`  `ya- Build inputs for `name`, `email` and `role` (backend engineer, frontend engineer, designer, etc. Use your imagination)
-done
-- Import the useState hook and utilize what we learned about two-way data binding[?]
-done
+- Build inputs for `name`, `email` and `role` (backend engineer, frontend engineer, designer, etc. Use your imagination)
+- Import the useState hook and utilize what we learned about two-way data binding
 - Render your `Form` component in `App` and pass a setter method (the `set_____` method from your team members state in `App`) down to it so you can add team members to your state.
-done
+
 Now you are finished with MVP! Move on to the stretch goals at the bottom. The first is to add the functionality to edit members. As this is a very complicated process, steps have been included here to help you through that.
 
 ### STEP 3 - Add the edit functionality (STRETCH)
@@ -106,3 +92,8 @@ After finishing your required elements, you can push your work further. These go
 
 - Follow the steps above to edit members. This is difficult to do, and the architecture is tough. But it is a great skill to practice! Pay attention the the implementation details, and to the architecture. There are many ways to accomplish this. When you finish, can you think of another way?
 
+- Build another layer of your App so that you can keep track of multiple teams, each with their own encapsulated list of team members.
+
+- Look into the various strategies around form validation. What happens if you try to enter a number as a team-members name? Does your App allow for that? Should it? What happens if you try and enter a function as the value to one of your fields? How could this be dangerous? How might you prevent it?
+
+- Style the forms. There are some subtle browser defaults for input tags that might need to be overwritten based on their state (active, focus, hover, etc.); Keep those CSS skill sharp.
